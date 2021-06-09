@@ -2,4 +2,4 @@ body {background-image:url("https://lysefjorden.com/wp-content/uploads/2018/03/t
 #logo {width: 130px; height:100px;}
 
 h1 {font-family: Arial;}
-h1 #logo ul {display: inline-block;}
+header nav ul li {display: inline-block;}
