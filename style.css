@@ -1,5 +1,5 @@
 body {background-color: azure;}
 
-header {height: 30px;}
+/* header {height: 30px;} */
 header ul li {display: inline-block; float: right;}
 
