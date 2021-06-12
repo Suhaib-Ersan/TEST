@@ -9,12 +9,11 @@ p {
 }
 
 body {
-  background-image: url("asset/weed.jpg");
+  /* background-image: url("asset/weed.jpg"); */
   height: 100%;
   width: 100%;
   margin: 0.3%;
-
-  background-size:80% ;
+  background-size: 80%;
 }
 
 header {
@@ -37,7 +36,11 @@ a:hover {
 h1 {
   font-size: 3pc;
   font-family: lobster;
-  padding-right: 7%;
+  padding: 1%;
+  padding-right: 3%;
+  background: -webkit-linear-gradient(hsl(138, 56%, 4%), hsl(145, 58%, 37%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 header nav {
@@ -53,6 +56,7 @@ header ul li a {
   text-align: center;
   color: black;
   text-decoration: none;
+  font-size: 1.2pc;
 }
 
 ul li {
@@ -70,17 +74,44 @@ li {
 }
 
 main {
-  margin: 1%;
+  /* margin: 1%; */
+  margin-top: 2%;
   text-align: center;
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+#hero {
+  box-shadow: 0px 5px 20px #0000003d;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 2%;
+  gap: 1%;
 }
 
 .column {
-  float: left;
-  width: 33.33%;
-  padding: 7%;
-  box-sizing: border-box;
-  font-size: 1.5pc;
+  /* float: left; */
+  /* width: 31.33%; */
+  padding: 4%;
+  /* box-sizing: border-box; */
+  font-size: 1.2pc;
   background-color: #ffffffb6;
-  margin: 1px;
+  /* margin: 1%; */
+  box-shadow: 0px 5px 20px #0000003d;
+}
+
+footer {
+  text-align: center;
+  font-family: sans-serif;
+  background-color: #ffffffb6;
+  font-size: 1.2pc;
+  height: 50px;
+  margin-top: 50px;
+  box-shadow: 0px 1px 20px #0000003d;
+  padding: 15px;
 }
