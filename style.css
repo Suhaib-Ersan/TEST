@@ -83,9 +83,7 @@ main {
   gap: 30px;
 }
 
-#hero {
-  box-shadow: 0px 5px 20px #0000003d;
-}
+
 
 .row {
   display: flex;
@@ -114,4 +112,19 @@ footer {
   margin-top: 50px;
   box-shadow: 0px 1px 20px #0000003d;
   padding: 15px;
+}
+
+
+.billboard { 
+  height:700px;
+  /* width:1690px; */
+  box-shadow: 0px 5px 20px #0000003d;
+}
+
+#hero {
+  /* height:700px;
+  width:1690px; */
+  box-shadow: 0px 5px 20px #0000003d;
+ 
+
 }
