@@ -1,4 +1,4 @@
 body {background-color: azure; margin: 1%;}
 
-header {text-align: center;}
+header {text-align: center; font-family: Verdana; color: white;}
 header ul li {display: inline-block; float: right; 
