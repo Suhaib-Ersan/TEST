@@ -1,32 +1,67 @@
-body {background-color: #6c770bbb; margin: 1%;}
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Staatliches&display=swap");
+
+
+
+
+body {
+  background-image: url("asset/weed.jpg");
+  height: 100%;
+  width: 100%;
+  margin: 0.3%;
+
+  background-size: cover;
+}
 
 header {
-    text-align: center;
-     font-family: Verdana;
-      color: white; 
-       text-decoration: none;
-       text-shadow: 2px 2px;
-    }
+  text-align: center;
+  font-family: sans-serif;
+  background-color: hsla(0, 0%, 100%, 0.602);
+  /* text-decoration: none; */
+  box-shadow: 0px 5px 20px #0000003d;
+  height: 100px;
+  position: relative;
+}
 
+ul li a {
+  overflow: hidden;
+}
 
-header ul li {
-   display: inline-block;
-   float: right;
-    text-decoration: none;
-    }
+a:hover {
+  color: hsl(2, 83%, 39%);
+}
 
+h1 {
+  font-size: 3pc;
+  font-family: lobster;
+  padding-right: 7%;
+}
+
+header nav {
+  position: absolute;
+  left: 23.5px;
+  bottom: 15px;
+}
+
+header ul li a {
+  float: left;
+  display: block;
+
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
 
 ul li {
-     float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    }
+  overflow: hidden;
+  /* background-color: #333; */
+  display: inline-block;
+  padding: 0px 15px;
+}
 
+ul li:first-child {
+  padding-left: 0%;
+}
 
-    li {
-        text-decoration: none;
-    
-    }
+li {
+  text-decoration: none;
+}
