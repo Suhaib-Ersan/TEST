@@ -2,4 +2,5 @@ body {background-color: #6c770bbb; margin: 1%;}
 
 header {text-align: center; font-family: Verdana; color: white;}
 header ul li {display: inline-block; float: right; }
-ul li {justify-content: space-between; }
+ul li { flex:
+    justify-content: space-between; }
