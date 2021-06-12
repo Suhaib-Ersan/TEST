@@ -23,6 +23,8 @@ header {
   box-shadow: 0px 5px 20px #0000003d;
   height: 100px;
   position: relative;
+
+  margin-bottom: 2rem;
 }
 
 ul li a {
@@ -38,7 +40,7 @@ h1 {
   font-family: lobster;
   padding: 1%;
   padding-right: 3%;
-  background: -webkit-linear-gradient(hsl(138, 56%, 4%), hsl(145, 58%, 37%));
+  background: -webkit-linear-gradient(hsl(170, 42%, 20%), hsl(145, 83%, 57%));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -75,12 +77,14 @@ li {
 
 main {
   /* margin: 1%; */
-  margin-top: 2%;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   gap: 30px;
+
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 
@@ -88,8 +92,7 @@ main {
 .row {
   display: flex;
   justify-content: space-around;
-  margin: 0 2%;
-  gap: 1%;
+  gap: 2rem;
 }
 
 .column {
@@ -109,22 +112,91 @@ footer {
   background-color: #ffffffb6;
   font-size: 1.2pc;
   height: 50px;
-  margin-top: 50px;
+  margin-top: 2rem;
   box-shadow: 0px 1px 20px #0000003d;
   padding: 15px;
 }
 
 
 .billboard { 
-  height:700px;
-  /* width:1690px; */
+  height: 680px;
+  width:100%;
   box-shadow: 0px 5px 20px #0000003d;
+  overflow: hidden;
+
+  position: relative;
 }
 
 #hero {
-  /* height:700px;
-  width:1690px; */
+  height: 100%;
   box-shadow: 0px 5px 20px #0000003d;
- 
 
+  object-fit: cover;
+
+}
+.billboardOverlay {
+  width: 100%;
+  height: 100%;
+
+  text-align: left;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0);
+
+  backdrop-filter: blur(0px);
+
+  transition: 0.15s;
+}
+.h2AndBtnContainer {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translate(0%,-50%);
+}
+.billboardOverlay h2 {
+  
+  font-size: 4.5rem;
+
+  user-select: none;
+
+  margin-bottom: 1rem;
+
+  text-shadow: 0 2px 7px rgba(0, 0, 0, 0.384);
+}
+.billboard:hover .billboardOverlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 1;
+  backdrop-filter: blur(4px);
+}
+.billboardOverlay .btn {
+  border-radius: 5px;
+  width: fit-content;
+  padding: 25px 40px;
+  background-color: hsl(145, 83%, 57%);
+  font-size: 30px;
+  white-space: nowrap;
+
+  position: relative;
+  left: 0.25rem;
+  bottom: 0;
+
+  user-select: none;
+  cursor: pointer;
+  
+  transition: 0.15s;
+
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.384);
+}
+.billboardOverlay .btn:hover {
+  background-color: hsl(152, 71%, 50%);
+  bottom: 0.2rem;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.568);
 }
