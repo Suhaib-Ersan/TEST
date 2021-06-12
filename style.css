@@ -14,7 +14,7 @@ body {
   width: 100%;
   margin: 0.3%;
 
-  background-size: cover;
+  background-size:80% ;
 }
 
 header {
@@ -42,7 +42,7 @@ h1 {
 
 header nav {
   position: absolute;
-  left: 23.5px;
+  left: 50px;
   bottom: 15px;
 }
 
@@ -72,15 +72,15 @@ li {
 main {
   margin: 1%;
   text-align: center;
-  padding: 1%;
+  
 }
 
 .column {
-  /* float: left; */
   float: left;
   width: 33.33%;
-  padding: 5%;
+  padding: 7%;
   box-sizing: border-box;
   font-size: 1.5pc;
   background-color: #ffffffb6;
+  margin: 1px;
 }
