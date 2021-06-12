@@ -9,8 +9,9 @@ header {
 
 
 header ul li {
-    display: center;
-    
+   display: inline-block;
+   float: right;
+    text-decoration: none;
     }
 
 
